@@ -1,3 +1,8 @@
+0.003   2018-08-12 (PERLANCAR)
+
+	- Add participants: Data::Comparator, Data::Diff.
+
+
 0.002   2018-08-12 (PERLANCAR)
 
 	- Include module name for Test::Deep::NoTest.
