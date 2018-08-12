@@ -20,6 +20,9 @@ our $scenario = {
             fcall_template => 'Data::Cmp::cmp_data(<d1>, <d2>)',
         },
         {
+            fcall_template => 'Data::Cmp::Numeric::cmp_data(<d1>, <d2>)',
+        },
+        {
             name => 'Test::Deep::NoTest::eq_deeply',
             module => 'Test::Deep::NoTest',
             code_template => 'use Test::Deep::NoTest; eq_deeply(<d1>, <d2>)',
