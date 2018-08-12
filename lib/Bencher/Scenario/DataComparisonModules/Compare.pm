@@ -10,9 +10,7 @@ use warnings;
 our $scenario = {
     summary => 'Benchmark data comparison modules',
     modules => {
-        'Data::Compare' => {version=>0},
         'Data::Cmp' => {version=>0.002},
-        'Test::Deep::NoTest' => {version=>0},
     },
     participants => [
         {
@@ -25,6 +23,9 @@ our $scenario = {
             name => 'Test::Deep::NoTest::eq_deeply',
             module => 'Test::Deep::NoTest',
             code_template => 'use Test::Deep::NoTest; eq_deeply(<d1>, <d2>)',
+        },
+        {
+            fcall_template => 'Data::Comparator::data_comparator(<d1>, <d2>)',
         },
     ],
     datasets => [
