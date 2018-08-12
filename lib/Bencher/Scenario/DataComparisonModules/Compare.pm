@@ -11,7 +11,7 @@ our $scenario = {
     summary => 'Benchmark data comparison modules',
     modules => {
         'Data::Compare' => {version=>0},
-        'Data::Cmp' => {version=>0},
+        'Data::Cmp' => {version=>0.002},
         'Test::Deep::NoTest' => {version=>0},
     },
     participants => [
