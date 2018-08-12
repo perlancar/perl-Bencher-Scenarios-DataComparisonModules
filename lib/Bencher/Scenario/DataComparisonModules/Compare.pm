@@ -23,6 +23,7 @@ our $scenario = {
         },
         {
             name => 'Test::Deep::NoTest::eq_deeply',
+            module => 'Test::Deep::NoTest',
             code_template => 'use Test::Deep::NoTest; eq_deeply(<d1>, <d2>)',
         },
     ],
