@@ -36,11 +36,12 @@ our $scenario = {
         },
     ],
     datasets => [
-        {name => 'simple scalar' , args=>{d1=>1, d2=>1}},
-        {name => 'array len=10'  , args=>{d1=>[1..10], d2=>[1..10]}},
-        {name => 'array len=1000', args=>{d1=>[1..1000], d2=>[1..1000]}},
-        {name => 'hash keys=10'  , args=>{d1=>{1..20}, d2=>{1..20}}},
-        {name => 'hash keys=1000', args=>{d1=>{1..2000}, d2=>{1..2000}}},
+        {name => 'simple scalar'  , args=>{d1=>1, d2=>1}},
+        {name => 'array len=10'   , args=>{d1=>[1..10], d2=>[1..10]}},
+        {name => 'array len=1000' , args=>{d1=>[1..1000], d2=>[1..1000]}},
+        {name => 'array len=10000', args=>{d1=>[1..10000], d2=>[1..10000]}, include_by_default=>0},
+        {name => 'hash keys=10'   , args=>{d1=>{1..20}, d2=>{1..20}}},
+        {name => 'hash keys=1000' , args=>{d1=>{1..2000}, d2=>{1..2000}}},
     ],
 };
 
