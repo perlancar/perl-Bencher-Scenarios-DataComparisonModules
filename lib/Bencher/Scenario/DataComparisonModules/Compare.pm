@@ -27,6 +27,13 @@ our $scenario = {
         {
             fcall_template => 'Data::Comparator::data_comparator(<d1>, <d2>)',
         },
+        {
+            name => 'Data::Diff::diff',
+            module => 'Data::Diff',
+            # diff not exported by Data::Diff as advertised
+            #code_template => 'use Data::Diff qw(diff); diff(<d1>, <d2>)',
+            code_template => 'use Data::Diff; Data::Diff->new(<d1>, <d2>)',
+        },
     ],
     datasets => [
         {name => 'simple scalar' , args=>{d1=>1, d2=>1}},
